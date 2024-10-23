@@ -1,21 +1,26 @@
 using Calc;
 
-namespace FindMinAndMax
+namespace CalcTesting
 {
     [TestClass]
     public class UnitTest1
     {
         [TestMethod]
-        public void TestMethod1()
+        public void returnetIs30()
         {
-            int[] ar1 ={2,4,6,7,8,35,89,75,23,53,46};
-            int[] ar2 = {3,5,4,67,565,76,89,65,43,24,2,5,1 };
-           
-            MyCalc cl = new MyCalc();
-            Assert.AreEqual(89, cl.FindMax(ar1));
-            Assert.AreEqual(2, cl.FindMin(ar1));
-            Assert.AreEqual(565, cl.FindMax(ar2));
-            Assert.AreEqual(1, cl.FindMin(ar2));
+            int[] arr1 = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 };
+            int[] arr2 = { 0,1,2,3,4,5,6,7,8,9,10,11 };
+            MyCalc mc= new MyCalc();
+            Assert.AreEqual(11, mc.FindMax(arr1));
+          
+        }
+        public void findMin()
+        {
+            int[] arr1 = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11,32 };  
+            int[] arr2 = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 };
+            MyCalc mc = new MyCalc();
+            Assert.AreEqual(0, mc.FindMin(arr2));
+
         }
     }
 }
