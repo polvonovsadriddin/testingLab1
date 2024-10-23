@@ -3,7 +3,7 @@ using Calc;
 namespace CalcTesting
 {
     [TestClass]
-    public class UnitTest1
+    public class Massiv_1To11
     {
         [TestMethod]
         public void returnetIs30()
